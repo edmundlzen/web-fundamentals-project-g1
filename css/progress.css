@@ -24,6 +24,7 @@ body {
 
 .course-card {
   width: 25vw;
+  min-width: 280px;
 }
 
 .course-card-header {
@@ -60,4 +61,35 @@ body {
   flex-direction: column;
   gap: 8px;
   margin-top: 16px;
+}
+
+.badges-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.badge-card {
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.badge-card img {
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
+}
+
+.badge-title {
+  margin-top: -12px;
+  font-weight: 600;
+}
+
+.badge-text {
+  margin-top: 6px;
+  font-size: 13px;
 }
