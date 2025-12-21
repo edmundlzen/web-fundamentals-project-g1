@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Progress Tracker</title>
+
+    <link rel="stylesheet" href="course catalog.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="topbar">
+      <button class="icon-button">
+        <img src="../images/icon.png" width="64" height="64" />
+      </button>
+
+      <button class="topbar-button">Home</button>
+      <button class="topbar-button">Course Catalog</button>
+      <button class="topbar-button">Progress Tracker</button>
+      <button class="topbar-button">Community</button>
+    </div>
+
+<div class="container">
+ 
+</head>
+<body>
+    <div class="sidebar">
+      <div class="sidebar-box" onclick="showContent('html')">HTML</div>
+      <div class="sidebar-box" onclick="showContent('css')">CSS</div>
+      <div class="sidebar-box" onclick="showContent('javascript')">JavaScript</div>
+      <div class="sidebar-box" onclick="showContent('php')">PHP</div>
+    </div>
+
+    <div class="content" id="main-content">
+        <div class="banner">
+        <div class="banner-content">
+        <img src="https://img.icons8.com/?size=96&id=20909&format=png" alt="HTML5 Logo" class="logo">
+        <div class="text">
+        <h1>Hyper Text Markup Language For Beginners</h1>
+        <p>Your First Step Into The World Of Modern Web Development</p>
+        </div>
+        <button class="btn">Enroll Course</button>
+        </div>
+        </div>
+
+        <div class="card-container">
+        <div class="card-box">
+        <h4>1. Master the Fundamentals of HTML</h4>
+        <p>Learn the fundamentals of HTML starting from understanding basic page structure and essential tags, to organizing content in a clear and meaningful way. This module helps you build well structured web pages and understand HTML as the foundation of modern web development.</p>
+        <a href="Course.html" target="_blank" class="detail-btn"> View Details </a>
+        </div>
+        <div class="card-box">
+        <h4>2. HTML for UI Design</h4>
+        <p>Understand how HTML forms the backbone of interface structure and how it is used to organize visual elements in UI design. This module focuses on how HTML is used to organize visual elements such as sections, text, images, and components, helping designers and developers create clean, consistent and user-friendly interfaces.</p>
+        <a href="details.html" target="_blank" class="detail-btn"> View Details </a>
+        </div>
+        <div class="card-box">
+        <h4>3. HTML for Digital Marketing</h4>
+        <p>Learn how to use HTML to create landing pages, improve SEO and build structured content for digital marketing campaigns. This module focuses on building clean, accessible, and conversion-friendly pages that support online marketing strategies and improve overall website performance.</p>
+        <a href="details.html" target="_blank" class="detail-btn"> View Details </a>
+        </div>
+        <div class="card-box">
+        <h4>4. HTML for Documentation & Technical Writing</h4>
+        <p>Master the use of HTML to create technical documentation, formatted articles, and structured digital reports. This module focuses on organizing content for readability and consistency which helping you present technical information in a professional and accessible way.</p>
+        <a href="details.html" target="_blank" class="detail-btn"> View Details </a>
+        </div>
+        </div>
+    </div>
+
+<script>
+    const contents = {
+    
+  html: `
+    <div class="banner">
+    <div class="banner-content">
+    <img src="https://img.icons8.com/?size=96&id=20909&format=png" alt="HTML5 Logo" class="logo">
+    <div class="text">
+    <h1>Hyper Text Markup Language For Beginners</h1>
+    <p>Your First Step Into The World Of Modern Web Development</p>
+    </div>
+    <button class="btn">Enroll Course</button>
+    </div>
+    </div>
+
+    <div class="card-container">
+    <div class="card-box">
+    <h4>1. Master the Fundamentals of HTML</h4>
+    <p>Learn the fundamentals of HTML starting from understanding basic page structure and essential tags, to organizing content in a clear and meaningful way. This module helps you build well structured web pages and understand HTML as the foundation of modern web development.</p>
+    <button class="detail-btn">View Details</button>
+    </div>
+                    
+    <div class="card-box">
+    h4>2. HTML for UI Design</h4>
+    <p>Understand how HTML forms the backbone of interface structure and how it is used to organize visual elements in UI design. This module focuses on how HTML is used to organize visual elements such as sections, text, images, and components, helping designers and developers create clean, consistent and user-friendly interfaces.</p>
+    <button class="detail-btn">View Details</button>
+    </div>
+
+    <div class="card-box">
+    <h4>3. HTML for Digital Marketing</h4>
+    <p>Learn how to use HTML to create landing pages, improve SEO, and build structured content for digital marketing campaigns. This module focuses on building clean, accessible, and conversion-friendly pages that support online marketing strategies and improve overall website performance.</p>
+    <button class="detail-btn">View Details</button>
+    </div>
+                   
+    <div class="card-box">
+    <h4>4. HTML for Documentation & Technical Writing</h4>
+    <p>Master the use of HTML to create technical documentation, formatted articles, and structured digital reports. This module focuses on organizing content for readability and consistency which helping you present technical information in a professional and accessible way.</p>
+    <button class="detail-btn">View Details</button>
+    </div>
+    </div>
+            `,
+  css: `
+    <div class="banner">
+    <div class="banner-content">
+    <img src="https://img.icons8.com/?size=96&id=21278&format=png" alt="CSS Logo" class="logo">
+    <div class="text">
+    h1>Cascading Style Sheets For Beginners</h1>
+    <p>Style Your Web Pages with Modern CSS Techniques</p>
+    </div>
+    <button class="btn">Enroll Course</button>
+    </div>
+    </div>
+
+  
+    <div class="card-container">
+    <div class="card-box">
+    <h4>1. Introduction to CSS</h4>
+    <p>Learn the basics of CSS, including selectors, properties, and how to apply styles to HTML elements.</p>
+    <button class="detail-btn">View Details</button>
+    </div>
+                    
+    <div class="card-box">
+    <h4>2. Layout and Positioning</h4>
+    <p>Master Flexbox and Grid for creating responsive layouts.</p>
+    <button class="detail-btn">View Details</button>
+    </div>
+                    
+    <div class="card-box">
+    <h4>3. Advanced CSS</h4>
+    <p>Explore animations, transitions, and media queries for dynamic web design.</p>
+    <button class="detail-btn">View Details</button>
+    </div>
+                    
+    <div class="card-box">
+    <h4>4. CSS Frameworks</h4>
+    <p>Introduction to popular frameworks like Bootstrap and Tailwind CSS.</p>
+     <button class="detail-btn">View Details</button>
+    </div>
+    </div>
+    `,
+
+javascript: `
+    <div class="banner">
+    <div class="banner-content">
+    <img src="https://img.icons8.com/?size=96&id=108784&format=png" alt="JavaScript Logo" class="logo">
+    <div class="text">
+    <h1>JavaScript For Beginners</h1>
+    <p>Add Interactivity to Your Web Pages</p>
+    </div>
+    <button class="btn">Enroll Course</button>
+    </div>
+    </div>
+
+    <div class="card-container">
+    <div class="card-box">
+    <h4>1. JavaScript Basics</h4>
+    <p>Learn variables, functions, and control structures in JavaScript.</p>
+    <button class="detail-btn">View Details</button>
+    </div>
+    
+    <div class="card-box">
+    <h4>2. DOM Manipulation</h4>
+    <p>Interact with HTML elements using the Document Object Model.</p>
+    <button class="detail-btn">View Details</button>
+    </div>
+                    
+    <div class="card-box">
+    <h4>3. Asynchronous JavaScript</h4>
+    <p>Understand promises, async/await, and AJAX for dynamic content.</p>
+    <button class="detail-btn">View Details</button>
+    </div>
+     
+    <div class="card-box">
+    <h4>4. Frameworks and Libraries</h4>
+    <p>Introduction to React, Vue, and other popular JS frameworks.</p>
+    <button class="detail-btn">View Details</button>
+    </div>
+    </div>
+            `,
+php: `
+    <div class="banner">
+    <div class="banner-content">
+    <img src="https://img.icons8.com/?size=160&id=f0R4xVI4Sc8O&format=png" alt="PHP Logo" class="logo">
+    <div class="text">
+    <h1>PHP For Beginners</h1>
+    <p>Build Dynamic Web Applications with PHP</p>
+    </div>
+    <button class="btn">Enroll Course</button>
+    </div>
+    </div>
+                
+    <div class="card-container">
+    <div class="card-box">
+    <h4>1. PHP Fundamentals</h4>
+    <p>Learn syntax, variables, and basic programming concepts in PHP.</p>
+    <button class="detail-btn">View Details</button>
+    </div>
+                    
+    <div class="card-box">
+    <h4>2. Working with Databases</h4>
+    <p>Connect to MySQL databases and perform CRUD operations.</p>
+    <button class="detail-btn">View Details</button>
+    </div>
+                    
+    <div class="card-box">
+    <h4>3. Web Security</h4>
+    <p>Understand common vulnerabilities and how to secure PHP applications.</p>
+    <button class="detail-btn">View Details</button>
+    </div>
+                
+    <div class="card-box">
+    <h4>4. Frameworks</h4>
+    <p>Introduction to Laravel and other PHP frameworks for rapid development.</p>
+    <button class="detail-btn">View Details</button>
+    </div>
+    </div>
+`};
+        function showContent(topic) {
+          document.getElementById('main-content').innerHTML = contents[topic];
+        }
+    </script>
+</body>
+</html>
+  </body>
+</html>
