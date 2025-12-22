@@ -20,16 +20,16 @@ main {
 }
 
 .hero-image {
-  flex: 1 1 100%;     /* allow it to shrink on mobile */
-  max-height: 400px;   /* optional, prevents huge images */
+  flex: 1 1 400px;
+  max-height: 400px;
 }
 
 .hero-image img {
   width: 100%;
-  height: auto;        /* maintain aspect ratio */
+  height: auto; /* maintain aspect ratio */
   max-width: 100%;
   display: block;
-  object-fit: cover;   /* optional for cropping */
+  object-fit: cover; /* optional for cropping */
 }
 
 /* ---------- Courses Grid (FORCE OVERRIDE) ---------- */
@@ -37,6 +37,7 @@ main .courses-grid {
   display: flex !important;
   flex-wrap: wrap !important;
   gap: 24px !important;
+  margin-top: 40px;
 }
 
 /* ---------- Card (FORCE OVERRIDE) ---------- */
@@ -58,6 +59,24 @@ main .courses-grid .card {
 @media (max-width: 600px) {
   .hero-section {
     flex-direction: column;
+  }
+
+  .hero-content {
+    flex: 0 0 auto;
+    padding: 24px;
+  }
+
+  .hero-image {
+    flex: 0 0 180px;
+    max-height: 180px;
+    overflow: hidden;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center center;
   }
 
   main .courses-grid .card {
