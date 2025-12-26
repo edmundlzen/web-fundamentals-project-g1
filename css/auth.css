@@ -75,109 +75,401 @@
     text-decoration: underline;
 }
 
-/* Dashboard */
-.dashboard-container {
-    padding: 24px;
+
+/*User Dashboard */
+/* ---------- Page Layout ---------- */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-height: 100vh;
+    padding: 5px 40px;
 }
 
-.dashboard-card {
-    padding: 20px;
+.topbar {
+    width: 100%;
+    padding: 15px 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 5px 40px;
+    color: #1a1a1a;
+}
+
+.stats-outer-card,
+.welcome-card,
+.side-card,
+.course-card,
+.stat-item {
+    background: #ffffff;
+    border: 1px solid #eaeaea;
     border-radius: 12px;
-    border: 1px solid #eee;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 25px;
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 3;
+}
+
+.welcome-card {
     background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
 }
 
-.dashboard-card h2 {
+.welcome-text h1 {
+    font-size: 28px;
     margin-bottom: 8px;
-    font-size: 22px;
 }
 
-.dashboard-card p {
+.welcome-text p {
     color: #777;
     font-size: 14px;
 }
 
-.dashboard-layout {
-    display: grid;
-    grid-template-columns: 2.5fr 1fr;
-    gap: 24px;
+/* Stats Grid Section */
+.stats-outer-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
 }
 
-.dashboard-main {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.welcome-card {
-    padding: 28px;
-}
-
-.stats-row {
+.stats-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    /* 3 equal columns */
+    gap: 15px;
 }
 
-.stat {
-    text-align: center;
+.stat-item {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 120px;
 }
 
-.stat h3 {
-    font-size: 24px;
-    margin-bottom: 6px;
+.stat-title {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 15px;
 }
 
-.welcome-card {
+.stat-label {
+    font-size: 13px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.status-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.dashboard-side button {
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px;
-}
-
-.course-status-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+.badge {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 15px;
+    background: #eee;
 }
 
 .badge.active {
-    background: #000;
+    background: #1a1a1a;
     color: #fff;
-    padding: 4px 8px;
-    border-radius: 12px;
 }
 
-.badge.paused {
-    background: #eee;
-    padding: 4px 8px;
-    border-radius: 12px;
+.left-count {
+    font-size: 11px;
+    color: #999;
+    border: 1px solid #eee;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.circle-stat {
+    font-size: 28px;
+    font-weight: bold;
+    border: 1px solid #eee;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.notification {
+    position: absolute;
+    top: -5px;
+    right: -20px;
+    background: #ff5252;
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 10px 0;
+    overflow: hidden;
 }
 
 .progress-bar {
+    height: 100%;
+    background-color: #1a1a1a;
+    /* Dark bar as seen in original */
+    border-radius: 10px;
+}
+
+.progress-text-row {
+    display: flex;
+    justify-content: flex-end;
+    /* This pushes the content to the right */
+    width: 100%;
+}
+
+.progress-percent {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Enrolled Courses */
+.enrolled-section h3 {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.course-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.course-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.course-card h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.level {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.course-pct {
+    font-size: 11px;
+    float: right;
+    margin-bottom: 5px;
+}
+
+.course-progress-bar {
+    width: 100%;
     height: 6px;
     background: #eee;
-    border-radius: 4px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    clear: both;
 }
 
-.progress {
+.course-progress-bar .fill {
     height: 100%;
-    background: #000;
-    border-radius: 4px;
+    background: #1a1a1a;
+    border-radius: 3px;
 }
 
-@media (max-width: 768px) {
-    .dashboard-layout {
+/* Sidebar Styles */
+.sidebar {
+    flex: 1;
+}
+
+.side-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.side-card h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Donut Chart */
+.donut-chart {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.circular-chart {
+    width: 100px;
+    height: 100px;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+}
+
+.circle {
+    fill: none;
+    stroke: #1a1a1a;
+    stroke-width: 3.8;
+    stroke-linecap: round;
+}
+
+.percentage {
+    font-size: 8px;
+    font-weight: bold;
+    text-anchor: middle;
+}
+
+.hour-text strong {
+    display: block;
+    font-size: 16px;
+}
+
+.hour-text span {
+    font-size: 12px;
+    color: #888;
+}
+
+/* ---------- Buttons ---------- */
+button {
+    all: unset;
+    /* Resets default browser behavior */
+    cursor: pointer;
+
+    /* These three lines are the secret to centering the font */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 10px 16px;
+    /* Adjusted to match team's preferred height */
+    transition: 0.2s;
+    width: auto;
+}
+
+.btn-dark {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.btn-light {
+    background: #eee;
+    color: #333;
+    padding: 10px 20px;
+}
+
+.btn-block {
+    background: #1a1a1a;
+    color: #fff;
+    width: 88%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.full-width {
+    width: 65%;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Responsive Breakpoints to match member's code */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 5px 16px;
+    }
+
+    .dashboard-container {
+        flex-direction: column;
+        /* Stacks sidebar under main content */
+    }
+
+    /* Change 3-column grids to 1-column on mobile */
+    .stats-grid,
+    .course-cards-grid {
         grid-template-columns: 1fr;
     }
 
-    .stats-row,
-    .course-status-row {
-        grid-template-columns: 1fr;
+    .main-content {
+        flex: none;
+        width: 100%;
+    }
+
+    .welcome-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .welcome-card button {
+        width: 100%;
     }
 }
