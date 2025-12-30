@@ -433,6 +433,7 @@
   transform: scale(1.02);
 }
 
+/* Sidebar - Enhanced */
 .sidebar {
   flex: 1;
   display: flex;
@@ -468,6 +469,7 @@
   line-height: 1.5;
 }
 
+/* Working Hours Chart */
 .working-hours .donut-chart {
   align-items: center;
   gap: 20px;
@@ -522,6 +524,7 @@
   color: #888;
 }
 
+/* Quick Actions */
 .quick-actions {
 }
 
@@ -561,6 +564,7 @@
   transform: translateX(2px);
 }
 
+/* Certificates */
 .certificates {
   background: #fafafa;
 }
@@ -577,6 +581,7 @@
   font-size: 13px;
 }
 
+/* Responsive Design */
 @media screen and (max-width: 1024px) {
   .course-cards-grid {
     grid-template-columns: repeat(2, 1fr);

@@ -169,6 +169,7 @@
   transform: translateY(-2px);
 }
 
+/* Responsive Design */
 @media (max-width: 1200px) {
   .container {
     padding: 20px 24px;
@@ -370,7 +371,7 @@
     font-size: 12px;
   }
 }
-
+/* Course card logo and layout */
 .course-logo {
   max-width: 150px;
   height: auto;

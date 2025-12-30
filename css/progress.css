@@ -1,3 +1,4 @@
+/* ---------- Page Layout ---------- */
 body {
   display: flex;
   flex-direction: column;
@@ -12,6 +13,7 @@ body {
   padding: 15px 0;
 }
 
+/* ---------- Course Cards ---------- */
 .courses-enrolled-container {
   display: flex;
   flex-direction: column;
