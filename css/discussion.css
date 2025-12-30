@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background-color: #f8f9fa;
   color: #333;
   padding-bottom: 40px;
 }
@@ -41,11 +41,11 @@ body {
   background-color: #fefefe;
   margin: 50px auto;
   padding: 0;
-  border: 1px solid #888;
-  border-radius: 8px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
   width: 90%;
   max-width: 500px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
   animation: slideDown 0.3s ease;
 }
 
@@ -72,6 +72,7 @@ body {
   margin: 0;
   font-size: 20px;
   color: #2c3e50;
+  font-weight: 600;
 }
 
 .modal-close {
@@ -80,6 +81,9 @@ body {
   color: #999;
   cursor: pointer;
   transition: color 0.2s;
+  background: none;
+  border: none;
+  padding: 0;
 }
 
 .modal-close:hover {
@@ -96,8 +100,8 @@ body {
 
 .form-group label {
   display: block;
-  margin-bottom: 6px;
-  font-weight: 500;
+  margin-bottom: 8px;
+  font-weight: 600;
   color: #2c3e50;
   font-size: 14px;
 }
@@ -107,21 +111,22 @@ body {
   width: 100%;
   padding: 10px 12px;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 6px;
   font-family: "Inter", sans-serif;
   font-size: 14px;
   outline: none;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   border-color: #0066cc;
-  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
 }
 
 .form-group textarea {
   resize: vertical;
+  min-height: 120px;
 }
 
 .modal-footer {
@@ -136,9 +141,9 @@ body {
 .modal-submit {
   padding: 10px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -163,11 +168,11 @@ body {
 
 /* Forum Header */
 .forum-header {
-  background-color: #f8f9fa;
+  background-color: #fff;
   border-bottom: 1px solid #e0e0e0;
   padding: 20px 40px;
   position: sticky;
-  top: 94px; /* Height of topbar + padding */
+  top: 70px;
   z-index: 100;
 }
 
@@ -181,13 +186,13 @@ body {
 
 .forum-title {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 700;
   color: #2c3e50;
 }
 
 /* Post Container */
 .container {
-  max-width: 81%;
+  max-width: 900px;
   margin: 40px auto;
   padding: 0 20px;
 }
@@ -195,11 +200,16 @@ body {
 /* Individual Post */
 .post {
   background-color: white;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 25px;
-  margin-bottom: 30px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  border: 1px solid #eee;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s ease;
+}
+
+.post:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 .post-header {
@@ -210,6 +220,8 @@ body {
 }
 
 .post-profile img {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -219,20 +231,19 @@ body {
 }
 
 .post-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: #2c3e50;
   margin-bottom: 5px;
 }
 
 .post-author {
-  font-size: 14px;
+  font-size: 13px;
   color: #666;
-  font-style: italic;
 }
 
 .post-content {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.6;
   margin-bottom: 20px;
   color: #444;
@@ -241,194 +252,154 @@ body {
 /* Post Actions (Voting) */
 .post-actions {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .vote-btn {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 3px;
-  padding: 4px 8px;
+  gap: 6px;
+  padding: 6px 12px;
   min-width: auto;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   background-color: #f6f7f8;
   border-radius: 16px;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: all 0.2s ease;
   font-weight: 500;
-  font-size: 11px;
-  color: #818384;
+  font-size: 12px;
+  color: #666;
 }
 
 .vote-btn img {
   display: block;
   flex-shrink: 0;
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
 }
 
 .vote-count {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.5px;
-  text-align: center;
-  line-height: 1.2;
 }
 
 .upvote:hover,
 .downvote:hover {
   background-color: #e8eaed;
-  border-color: #b3b6b7;
+  border-color: #999;
 }
 
 .upvote.active {
   background-color: #e8f5e9;
   border-color: #4caf50;
   color: #2e7d32;
-  transform: scale(1.05);
 }
 
 .downvote.active {
   background-color: #ffebee;
   border-color: #d32f2f;
   color: #c62828;
-  transform: scale(1.05);
 }
 
 /* Message Input */
 .message-input {
   background-color: white;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 20px;
   margin: 30px 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  border: 1px solid #eee;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e8e8e8;
 }
 
 .message-form {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
 .message-text {
   flex: 1;
   padding: 12px 16px;
-  font-size: 16px;
+  font-size: 15px;
   border: 1px solid #ddd;
   border-radius: 6px;
   font-family: "Inter", sans-serif;
+  transition: border-color 0.2s;
 }
 
 .message-text:focus {
   outline: none;
-  border-color: #4dabf7;
-  box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.1);
+  border-color: #0066cc;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
 }
 
 .send-btn {
-  background-color: #007bff;
+  background-color: #000;
   color: white;
   border: none;
   padding: 12px 24px;
   border-radius: 6px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
   transition: background-color 0.2s;
+  white-space: nowrap;
 }
 
 .send-btn:hover {
-  background-color: #0056b3;
+  background-color: #2d2d2d;
 }
 
 /* Reply */
 .reply {
-  background-color: black;
+  background-color: #f5f5f5;
   border-radius: 8px;
   padding: 20px;
   margin-top: 20px;
-  border-left: 4px solid #007bff;
+  border-left: 4px solid #0066cc;
 }
 
 .reply-content {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6;
-  color: #444;
+  color: #555;
 }
 
 /* Submit Button (for + Post) */
 .submit {
-  background-color: black;
+  background-color: #000;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border-radius: 6px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
   transition: background-color 0.2s;
   margin-left: auto;
 }
 
 .submit:hover {
-  background-color: grey;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .forum-header {
-    padding: 15px 20px;
-    top: 84px;
-  }
-
-  .header-content {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-  }
-
-  .container {
-    padding: 0 15px;
-  }
-
-  .post {
-    padding: 20px;
-  }
-
-  .message-form {
-    flex-direction: column;
-  }
-
-  .send-btn {
-    width: 100%;
-  }
-
-  .comment-form {
-    flex-direction: column;
-  }
-
-  .comment-btn {
-    width: 100%;
-  }
+  background-color: #2d2d2d;
 }
 
 /* Comments Section */
 .comments-section {
   margin-top: 20px;
-  padding-top: 15px;
+  padding-top: 20px;
   border-top: 1px solid #e0e0e0;
 }
 
 .comments-list {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .comment {
-  padding: 12px 0;
-  margin-bottom: 8px;
+  padding: 15px 0;
+  margin-bottom: 10px;
   border-bottom: 1px solid #f0f0f0;
 }
 
@@ -437,8 +408,11 @@ body {
 }
 
 .comment-header {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .comment-header strong {
@@ -448,7 +422,6 @@ body {
 
 .comment-time {
   color: #999;
-  margin-left: 4px;
   font-size: 12px;
 }
 
@@ -462,8 +435,8 @@ body {
 .comment-form {
   display: flex;
   gap: 8px;
-  flex-direction: row !important;
   margin-top: 15px;
+}
 
 .comment-input {
   flex: 1;
@@ -473,6 +446,7 @@ body {
   font-size: 13px;
   font-family: "Inter", sans-serif;
   outline: none;
+  transition: border-color 0.2s;
 }
 
 .comment-input:focus {
@@ -482,16 +456,222 @@ body {
 
 .comment-btn {
   padding: 8px 16px;
-  background-color: #0066cc;
+  background-color: #000;
   color: white;
   border: none;
   border-radius: 4px;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: background-color 0.2s;
+  white-space: nowrap;
 }
 
 .comment-btn:hover {
-  background-color: #0052a3;
+  background-color: #2d2d2d;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .forum-header {
+    padding: 16px 20px;
+    top: 70px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .forum-title {
+    font-size: 24px;
+  }
+
+  .submit {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .container {
+    padding: 0 16px;
+    margin: 24px auto;
+  }
+
+  .post {
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+
+  .post-header {
+    gap: 12px;
+  }
+
+  .post-title {
+    font-size: 16px;
+  }
+
+  .post-content {
+    font-size: 14px;
+  }
+
+  .message-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .send-btn {
+    width: 100%;
+  }
+
+  .comment-form {
+    flex-direction: column;
+  }
+
+  .comment-btn {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 95%;
+    margin: 30px auto;
+  }
+
+  .post-actions {
+    gap: 8px;
+  }
+
+  .vote-btn {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .forum-header {
+    padding: 12px 16px;
+  }
+
+  .forum-title {
+    font-size: 20px;
+  }
+
+  .header-content {
+    gap: 10px;
+  }
+
+  .submit {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  .container {
+    padding: 0 12px;
+    margin: 16px auto;
+  }
+
+  .post {
+    padding: 12px;
+    margin-bottom: 16px;
+  }
+
+  .post-header {
+    gap: 10px;
+  }
+
+  .post-profile img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .post-title {
+    font-size: 15px;
+  }
+
+  .post-author {
+    font-size: 12px;
+  }
+
+  .post-content {
+    font-size: 13px;
+  }
+
+  .message-input {
+    padding: 16px;
+    margin: 20px 0;
+  }
+
+  .message-form {
+    gap: 8px;
+  }
+
+  .message-text {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .send-btn {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  .modal-content {
+    width: 98%;
+    margin: 20px auto;
+  }
+
+  .modal-header {
+    padding: 16px;
+  }
+
+  .modal-header h2 {
+    font-size: 18px;
+  }
+
+  .modal-form {
+    padding: 16px;
+  }
+
+  .form-group textarea {
+    min-height: 100px;
+  }
+
+  .comment {
+    padding: 12px 0;
+  }
+
+  .comment-header {
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .comment-text {
+    font-size: 12px;
+  }
+
+  .comment-input {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .comment-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .post-actions {
+    gap: 6px;
+  }
+
+  .vote-btn {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
 }

@@ -84,9 +84,10 @@
   padding: 24px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   min-height: 140px;
   transition: all 0.3s ease;
+  width: 100%;
 }
 
 .stat-item:hover {
@@ -102,6 +103,10 @@
   margin-bottom: 16px;
   color: #1a1a1a;
   line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .stat-label {
@@ -116,7 +121,7 @@
 .status-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
 }
 
@@ -292,6 +297,9 @@
   margin-bottom: 8px;
   color: #1a1a1a;
   line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .level {
@@ -341,6 +349,7 @@
 }
 
 /* Sidebar - Enhanced */
+.sidebar {
   flex: 1;
   display: flex;
   flex-direction: column;

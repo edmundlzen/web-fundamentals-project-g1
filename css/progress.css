@@ -25,6 +25,15 @@ body {
 .course-card {
   width: 25vw;
   min-width: 280px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.course-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .course-card-header {
@@ -35,7 +44,9 @@ body {
 
 .course-card-header img {
   height: 32px;
+  width: 32px;
   border-radius: 4px;
+  object-fit: contain;
 }
 
 .course-card-header-text {
@@ -44,15 +55,41 @@ body {
 
 .course-card-header-text h4 {
   margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.course-card-header-text p {
+  font-size: 12px;
+  color: #666;
 }
 
 .course-card-progress-text {
   margin-left: auto;
   margin-bottom: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: #000;
+  border-radius: 3px;
+  transition: width 0.3s ease;
 }
 
 .course-card-text {
   margin-top: 12px;
+  font-size: 13px;
+  color: #666;
 }
 
 .course-card-buttons {
@@ -89,11 +126,13 @@ body {
 .badge-title {
   margin-top: -12px;
   font-weight: 600;
+  font-size: 14px;
 }
 
 .badge-text {
   margin-top: 6px;
   font-size: 13px;
+  color: #666;
 }
 
 .certificate-header {
@@ -105,7 +144,18 @@ body {
 
 .certificate-header img {
   height: 64px;
+  width: 64px;
   object-fit: contain;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    padding: 5px 32px;
+  }
+
+  .course-card {
+    width: 35vw;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -113,20 +163,40 @@ body {
     padding: 5px 16px;
   }
 
+  .topbar {
+    padding: 10px 0;
+  }
+
   .section-titlebar {
     margin-top: 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .section-titlebar .btn-primary {
+    width: 100%;
   }
 
   .course-card {
     width: 100%;
     min-width: unset;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
   }
 
   .course-card-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+    min-width: 80px;
+  }
+
+  .course-card-header img {
+    width: 48px;
+    height: 48px;
   }
 
   .course-card-header-text {
@@ -134,8 +204,8 @@ body {
   }
 
   .course-card-progress-text {
-    margin-left: 0;
-    margin-top: 12px;
+    margin-left: auto;
+    margin-top: 0;
   }
 
   .course-card-buttons {
@@ -171,6 +241,7 @@ body {
 
   .certificate-header img {
     height: 48px;
+    width: 48px;
   }
 }
 
@@ -179,8 +250,46 @@ body {
     padding: 5px 12px;
   }
 
+  .section-titlebar {
+    flex-direction: column;
+  }
+
+  .section-titlebar .title-lg {
+    font-size: 24px;
+  }
+
+  .section-titlebar .btn-primary {
+    width: 100%;
+  }
+
+  .course-card {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .course-card-header {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .course-card-progress-text {
+    margin-left: auto;
+  }
+
   .badge-card img {
     width: 120px;
     height: 120px;
+  }
+
+  .course-card-buttons {
+    flex-direction: row;
+  }
+
+  .course-card-buttons button {
+    flex: 1;
+    padding: 10px 8px;
+    font-size: 12px;
   }
 }

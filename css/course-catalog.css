@@ -4,35 +4,12 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-.container {
-  padding: 20px;
-}
-
-.main-content {
-  display: flex;
-  gap: 20px;
-}
-
-/* Phone */
-@media (max-width: 768px) {
-  .container {
-    padding: 10px;
-  }
-
-  .main-content {
-    flex-direction: column;
-  }
-
-  .course-card,
-  .modules {
-    width: 100%;
-  }
-}
 
 body {
-  background: #f4f4f4;
+  background: #f5f5f5;
 }
 
+/* ---------- TOPBAR ---------- */
 .topbar {
   height: 70px;
   background-color: #ffffff;
@@ -41,12 +18,23 @@ body {
   padding: 0 20px;
   gap: 15px;
   border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .icon-button {
   background: none;
   border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button img {
+  width: 48px;
+  height: 48px;
 }
 
 .topbar-button {
@@ -55,47 +43,79 @@ body {
   padding: 10px 18px;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  transition: background-color 0.2s;
 }
 
 .topbar-button:hover {
   background-color: #d5d5d5;
 }
 
+.nav-right {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-right .btn-outline,
+.nav-right .btn-primary {
+  font-size: 12px;
+  padding: 8px 14px;
+}
+
+/* ---------- MAIN CONTAINER ---------- */
 .container {
   display: flex;
   gap: 24px;
   padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
   align-items: flex-start;
 }
 
+/* ---------- SIDEBAR ---------- */
 .sidebar {
-  width: 200px;
+  width: 220px;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .sidebar-box {
   background: #ffffff;
   padding: 12px 16px;
-  margin-bottom: 10px;
   border-radius: 8px;
   border: 1px solid #e0e0e0;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.2s ease;
+  text-align: center;
 }
 
 .sidebar-box:hover {
-  background-color: #eeeeee;
+  background-color: #f5f5f5;
+  border-color: #999;
 }
 
+/* ---------- CONTENT ---------- */
 .content {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  min-width: 0;
 }
 
+/* ---------- BANNER ---------- */
 .banner {
   width: 100%;
-  height: 180px;
+  height: 200px;
   background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/797/938/large/typing-on-apple-keyboard-on-desk-side-perspective-shot-4k-free-video.jpg");
   background-size: cover;
   background-position: center;
@@ -122,41 +142,49 @@ body {
   color: white;
 }
 
-.banner-content button {
-  margin-top: auto;
-  scale: 1.1;
-}
-
 .logo {
-  width: 70px;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .text {
+  flex: 1;
   margin-right: auto;
 }
 
 .text h1 {
   font-size: 24px;
   font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.3;
 }
 
 .text p {
-  margin-top: 6px;
   font-size: 14px;
   opacity: 0.9;
+  line-height: 1.5;
 }
 
-.btn {
-  margin-left: auto;
-  padding: 10px 20px;
-  border-radius: 20px;
-  border: none;
+.banner-content .btn-secondary {
+  flex-shrink: 0;
+  padding: 12px 24px;
   background: #ffffff;
-  font-size: 13px;
+  color: #333;
+  border: none;
+  border-radius: 8px;
   font-weight: 600;
+  font-size: 14px;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
+.banner-content .btn-secondary:hover {
+  background: #f0f0f0;
+}
+
+/* ---------- CARD CONTAINER ---------- */
 .card-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -166,52 +194,282 @@ body {
 .card-box {
   background: #ffffff;
   border: 1px solid #e5e5e5;
-  padding: 20px;
-  border-radius: 14px;
+  padding: 24px;
+  border-radius: 12px;
   line-height: 1.6;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-box:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #d0d0d0;
 }
 
 .card-box h4 {
-  margin-bottom: 10px;
-}
-
-.detail-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 140px;
-  height: 45px;
-
-  background: #cdcdcd;
-  color: rgb(63, 63, 63);
-  text-decoration: none;
+  font-size: 16px;
   font-weight: 600;
-  border-radius: 10px;
-  transition: 0.3s ease;
+  margin-bottom: 12px;
+  color: #333;
 }
 
-.detail-btn:hover {
-  background: #c0bfbf;
-  transform: scale(1.05);
+.card-box p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 16px;
+  flex-grow: 1;
 }
 
-.container {
-  display: flex;
-  gap: 24px;
-  padding: 24px;
+.card-box .btn-primary {
+  align-self: flex-start;
+  width: 100%;
+  padding: 12px 16px;
+  text-align: center;
 }
 
-/* SIDEBAR */
-.sidebar {
-  width: 220px;
-  flex-shrink: 0;
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 1200px) {
+  .container {
+    padding: 20px;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 }
 
-/* CONTENT */
-.content {
-  flex: 1;
+@media (max-width: 1024px) {
+  .container {
+    gap: 20px;
+  }
+
+  .sidebar {
+    width: 180px;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px;
+    gap: 16px;
+  }
+
+  .text {
+    margin-right: 0;
+  }
+
+  .text h1 {
+    font-size: 20px;
+  }
+
+  .banner {
+    height: 320px;
+  }
 }
-body {
-  background-color: #ffffff;
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 8px;
+    padding: 8px 0;
+  }
+
+  .sidebar-box {
+    flex: 0 0 auto;
+    min-width: 120px;
+    padding: 10px 14px;
+  }
+
+  .content {
+    gap: 20px;
+  }
+
+  .banner {
+    height: 280px;
+  }
+
+  .banner-content {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .text h1 {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .text p {
+    font-size: 13px;
+  }
+
+  .banner-content .btn-secondary {
+    padding: 10px 16px;
+    font-size: 13px;
+    white-space: nowrap;
+    margin-bottom: 12px;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .card-box {
+    padding: 20px;
+  }
+
+  .card-box h4 {
+    font-size: 15px;
+  }
+
+  .card-box p {
+    font-size: 12px;
+  }
+
+  .card-box .btn-primary {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+
+  .topbar {
+    height: 60px;
+    padding: 0 12px;
+    gap: 8px;
+  }
+
+  .topbar-button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .icon-button img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-right {
+    gap: 6px;
+  }
+
+  .nav-right .btn-outline,
+  .nav-right .btn-primary {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 12px;
+    gap: 16px;
+  }
+
+  .sidebar {
+    gap: 6px;
+  }
+
+  .sidebar-box {
+    min-width: 100px;
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .banner {
+    height: 240px;
+  }
+
+  .banner-content {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .text h1 {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .text p {
+    font-size: 12px;
+  }
+
+  .banner-content .btn-secondary {
+    padding: 8px 12px;
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .card-container {
+    gap: 12px;
+  }
+
+  .card-box {
+    padding: 16px;
+  }
+
+  .card-box h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .card-box p {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .card-box .btn-primary {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .topbar {
+    height: 56px;
+    padding: 0 8px;
+    gap: 6px;
+  }
+
+  .topbar-button {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+
+  .icon-button img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .nav-right {
+    gap: 4px;
+  }
+
+  .nav-right .btn-outline,
+  .nav-right .btn-primary {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
 }
