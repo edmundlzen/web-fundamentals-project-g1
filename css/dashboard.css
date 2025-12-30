@@ -87,6 +87,7 @@
   margin-left: 40px;
   transition: all 0.3s ease;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -424,6 +425,7 @@
   font-weight: 600;
   font-size: 13px;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .course-card .btn-block:hover {

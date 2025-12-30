@@ -3,11 +3,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  padding: 40px 20px;
 }
 
 .auth-card {
   width: 100%;
-  max-width: 480px;
+  max-width: 600px;
   padding: 40px;
   border-radius: 16px;
   border: 1px solid #eaeaea;
@@ -71,7 +73,7 @@
 
 .auth-footer a {
   color: #000;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* ---------- Mobile Responsive ---------- */
