@@ -210,6 +210,7 @@ button {
   align-items: center;
   gap: 4px;
   transition: background-color 0.2s ease-in-out;
+  text-decoration: none;
 }
 
 .btn-secondary:hover {
@@ -230,6 +231,7 @@ button {
   gap: 4px;
   border: 1px solid #d0d0d0;
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  text-decoration: none;
 }
 
 .btn-tertiary:hover {

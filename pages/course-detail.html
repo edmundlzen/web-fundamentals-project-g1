@@ -40,6 +40,19 @@
         gap: 20px;
         margin-bottom: 30px;
       }
+
+      @media (max-width: 768px) {
+        .course-card {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .course-logo {
+          max-width: 120px;
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -74,7 +87,16 @@
             <p id="course-instructor"></p>
             <p id="course-rating"></p>
             <p id="course-credits"></p>
-            <a href="enrollment-system.html" class="btn-primary"
+            <a
+              href="enrollment-system.html"
+              id="enroll-button"
+              class="btn-secondary"
+              style="
+                margin-top: auto;
+                font-size: 14px;
+                padding: 12px 20px;
+                width: 100%;
+              "
               >Enroll Course</a
             >
           </div>
@@ -107,6 +129,11 @@
             }
             const course = data.courses[courseId];
             if (course) {
+              // Update enroll button with course ID
+              document.getElementById(
+                "enroll-button"
+              ).href = `enrollment-system.html?id=${courseId}`;
+
               // Populate course card
               document.getElementById("course-logo").src = course.logo;
               document.getElementById("course-title").textContent =

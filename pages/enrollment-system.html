@@ -33,18 +33,21 @@
     <div class="container">
       <div class="enrollment-layout">
         <div class="enrollment-left">
-          <section class="course-card">
+          <section class="course-card" id="course-display">
             <img
               src="https://img.icons8.com/?size=96&id=20909&format=png"
-              alt="HTML Logo"
+              alt="Course Logo"
               class="course-logo"
+              id="enrollment-course-logo"
             />
 
             <div class="course-content">
-              <h2>Hyper Text Markup Language For Beginners</h2>
-              <h3>2. HTML for UI Design</h3>
+              <h2 id="enrollment-course-title">
+                Hyper Text Markup Language For Beginners
+              </h2>
+              <h3 id="enrollment-course-subtitle">2. HTML for UI Design</h3>
 
-              <p>
+              <p id="enrollment-course-description">
                 Understand how HTML forms the backbone of interface structure
                 and how it is used to organize visual elements in UI design.
                 This module focuses on how HTML is used to organize visual
@@ -53,10 +56,16 @@
                 user-friendly interfaces.
               </p>
 
-              <p>Category: UI Development</p>
-              <p>Instructor: Azman Hisyam</p>
-              <p>Rating: 4.7/5.0</p>
-              <p>Credit Hours: 4</p>
+              <p>
+                Category:
+                <span id="enrollment-course-category">UI Development</span>
+              </p>
+              <p>
+                Instructor:
+                <span id="enrollment-course-instructor">Azman Hisyam</span>
+              </p>
+              <p>Rating: <span id="enrollment-course-rating">4.7/5.0</span></p>
+              <p>Credit Hours: <span id="enrollment-course-credits">4</span></p>
             </div>
           </section>
         </div>
@@ -148,12 +157,12 @@
                 </div>
               </div>
             </form>
-            <button class="btn-primary next-button">
+            <button class="btn-primary next-button" style="margin-top: 20px">
               <img
-                width="20"
-                height="20"
-                src="https://img.icons8.com/ios/50/right--v1.png"
-                alt="arrow"
+                width="12"
+                height="12"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAzElEQVR4nO3SL0uDURTA4RdMtoFgEDEPDA5tzqIfYNFuXbbajeta3BdYknWLg5UhLG1pgsgs/plp4ZErysDdYbnvUHifeLiHXzg3ywqFfwd3aGMt79C3EfaWEQpecbCMUPCOo9+WVrGJnfAYx6jjDA00cY0OhngW94bdRZEraT1gKxZ6kl43FhrnELqNhS4SR+6xEQutYB1lVFHDCU5xjku0cIM+HjFdEAnfvJKlZN4Eh0kjwY/IC/azPJgZYDuXSIDe1+1Kn4NC4c/4ANzzdvYgXcAVAAAAAElFTkSuQmCC"
+                alt="long-arrow-right"
               />
               Next step: Payment Details
             </button>
@@ -284,6 +293,43 @@
     </div>
 
     <script>
+      // Load course data from query parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      const courseId = urlParams.get("id") || "html2"; // Default to html2 if no id provided
+
+      async function loadCourseData() {
+        try {
+          const response = await fetch("courses.json");
+          const data = await response.json();
+          const course = data.courses[courseId];
+
+          if (course) {
+            document.getElementById("enrollment-course-logo").src = course.logo;
+            document.getElementById("enrollment-course-title").textContent =
+              course.title;
+            document.getElementById("enrollment-course-subtitle").textContent =
+              course.subtitle;
+            document.getElementById(
+              "enrollment-course-description"
+            ).textContent = course.description;
+            document.getElementById("enrollment-course-category").textContent =
+              course.category;
+            document.getElementById(
+              "enrollment-course-instructor"
+            ).textContent = course.instructor;
+            document.getElementById("enrollment-course-rating").textContent =
+              course.rating;
+            document.getElementById("enrollment-course-credits").textContent =
+              course.creditHours;
+          }
+        } catch (error) {
+          console.error("Error loading course data:", error);
+        }
+      }
+
+      // Load course data when page loads
+      loadCourseData();
+
       const nextButton = document.querySelector(".next-button");
       const backButton = document.querySelector(".back-button");
       const checkoutButton = document.querySelector(".complete-payment-button");

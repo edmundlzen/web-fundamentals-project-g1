@@ -13,6 +13,11 @@
   width: 400px;
 }
 
+.enrollment-left .course-card {
+  width: 100%;
+  min-height: auto;
+}
+
 .enrollment-right {
   flex: 1;
   height: 100%;
