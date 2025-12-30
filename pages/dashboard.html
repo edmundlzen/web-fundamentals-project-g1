@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
 
     <link rel="stylesheet" href="/css/common.css" />
     <link rel="stylesheet" href="/css/auth.css" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,7 +38,7 @@
       <main class="main-content">
         <section class="welcome-card">
           <div class="welcome-text">
-            <h1>Hello, Welcome back!</h1>
+            <h1>Hello, Welcome back! 👋</h1>
             <p>
               Course "Fundamentals of Web Technology" has 19% progress this
               week. Keep going!
@@ -97,7 +99,9 @@
             <div class="course-card">
               <h4>Fundamentals of Web Technology</h4>
               <p class="level">Beginner</p>
-              <span class="course-pct">5%</span>
+              <div class="course-progress-info">
+                <span class="course-pct">5%</span>
+              </div>
               <div class="course-progress-bar">
                 <div class="fill" style="width: 5%"></div>
               </div>
@@ -106,7 +110,9 @@
             <div class="course-card">
               <h4>HTML & CSS Essentials</h4>
               <p class="level">Beginner</p>
-              <span class="course-pct">34%</span>
+              <div class="course-progress-info">
+                <span class="course-pct">34%</span>
+              </div>
               <div class="course-progress-bar">
                 <div class="fill" style="width: 34%"></div>
               </div>
@@ -115,7 +121,9 @@
             <div class="course-card">
               <h4>JavaScript Essentials</h4>
               <p class="level">Beginner</p>
-              <span class="course-pct">0%</span>
+              <div class="course-progress-info">
+                <span class="course-pct">0%</span>
+              </div>
               <div class="course-progress-bar">
                 <div class="fill" style="width: 0%"></div>
               </div>
