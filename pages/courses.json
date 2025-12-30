@@ -1,0 +1,516 @@
+{
+  "courses": {
+    "html1": {
+      "title": "Hyper Text Markup Language For Beginners",
+      "subtitle": "1. Master the Fundamentals of HTML",
+      "description": "Learn the fundamentals of HTML starting from understanding basic page structure and essential tags, to organizing content in a clear and meaningful way. This module helps you build well structured web pages and understand HTML as the foundation of modern web development.",
+      "category": "Web Development",
+      "instructor": "Isyah Nur",
+      "rating": "4.8/5.0",
+      "creditHours": 4,
+      "logo": "https://img.icons8.com/?size=96&id=20909&format=png",
+      "modules": [
+        {
+          "title": "Module 1 : Introduction to HTML",
+          "description": "A basic introduction to what HTML how it works and the role of structure in building web pages.",
+          "previewUrl": "https://youtu.be/it1rTvBcfRg?si=JzYXzotQre0PF5l1"
+        },
+        {
+          "title": "Module 2: Basic HTML Elements",
+          "description": "Learn essential elements such as headings, paragraphs, links, images and lists  and how to arrange them properly.",
+          "previewUrl": "https://youtube.com/shorts/mVJTAzbxK4Q?si=kNt0eNRgwpZhBiXI"
+        },
+        {
+          "title": "Module 3: Structuring a Web Page",
+          "description": "Understand how to organize a page using structural elements like header, section, body and footer .",
+          "previewUrl": "https://youtu.be/U4nbKMJRVaw?si=YXke_6kqFO5yjrzF"
+        },
+        {
+          "title": "Module 4: Mini Project(Build a Simple HTML Page)",
+          "description": "Create a complete web page using all the elements learned throughout the modules.",
+          "previewUrl": "https://youtu.be/-u3vE84Wo_U?si=rJUAT2SJC9pDmfIC"
+        }
+      ]
+    },
+    "html2": {
+      "title": "Hyper Text Markup Language For Beginners",
+      "subtitle": "2.HTML for UI Design",
+      "description": "Understand how HTML forms the backbone of interface structure and how it is used to organize visual elements in UI design. This module focuses on how HTML is used to organize visual elements such as sections, text, images, and components, helping designers and developers create clean, consistent and user-friendly interfaces.",
+      "category": "UI Development",
+      "instructor": "Azman Hisyam",
+      "rating": "4.7/5.0",
+      "creditHours": 4,
+      "logo": "https://img.icons8.com/?size=96&id=20909&format=png",
+      "modules": [
+        {
+          "title": "Module 1 : Introduction to HTML & UI Structure",
+          "description": "Learn the basics of HTML and how it is used to build the structure of user interfaces.",
+          "previewUrl": "https://www.youtube.com/watch?v=UB1O30fR-EE"
+        },
+        {
+          "title": "Module 2: UI Styling with CSS",
+          "description": "Understand how CSS is used to style and enhance the visual appearance of UI components",
+          "previewUrl": "https://www.youtube.com/watch?v=yfoY53QXEnI"
+        },
+        {
+          "title": "Module 3: UI Layout & Responsive",
+          "description": "Learn how to create structured layouts and responsive user interfaces for different screen sizes.",
+          "previewUrl": "https://www.youtube.com/watch?v=fYq5PXgSsbE"
+        },
+        {
+          "title": "Module 4: Simple UI Project Development",
+          "description": "Apply HTML and CSS knowledge to build a simple and complete user interface project.",
+          "previewUrl": "https://www.youtube.com/watch?v=8OxKqzjKQTA"
+        }
+      ]
+    },
+    "css1": {
+      "title": "Cascading Style Sheets For Beginners",
+      "subtitle": "2.",
+      "description": "Learn the basics of CSS including selectors, properties and how to apply styles to HTML elements. You will also understand how CSS interacts with HTML to create visually appealing web pages.",
+      "category": "Web Page Layout Design",
+      "instructor": "Ah Mei",
+      "rating": "4.7/5.0",
+      "creditHours": 4,
+      "logo": "https://img.icons8.com/?size=96&id=21278&format=png",
+      "modules": [
+        {
+          "title": "Module 1 : Introduction to CSS",
+          "description": "This module introduces Cascading Style Sheets and its role in web development. Learners will understand how CSS is used to style HTML elements, control layout, colors, fonts and improve the visual appearance of websites.",
+          "previewUrl": "https://youtu.be/yfoY53QXEnI?si=GTDABtxuZ-OuHOuf"
+        },
+        {
+          "title": "Module 2: CSS Syntax & Selectors",
+          "description": "This module explains the basic structure of CSS and learners will practice using element selectors, class selectors and ID selectors to apply styles to HTML content.",
+          "previewUrl": "https://youtu.be/l1mER1bV0N0?si=z6b5wHnm4SYRUQRY"
+        },
+        {
+          "title": "Module 3: Colors, Fonts & Text Styling",
+          "description": "Learners will learn how to change text color, background color, font family, font size, alignment and spacing to make web pages more attractive.",
+          "previewUrl": "https://youtu.be/YszONjKpgg4?si=GgYEKywv0paDP-rV"
+        },
+        {
+          "title": "Module 4: CSS Box Model & Layout Basics",
+          "description": "This module introduces the CSS Box Model including margin, border, padding and content. Learners will also understand basic layout concepts used to structure web pages properly.",
+          "previewUrl": "https://youtu.be/rIO5326FgPE?si=Ri93cRRpNgiFtVsE"
+        }
+      ]
+    },
+    "css2": {
+      "title": "Cascading Style Sheets For Beginners",
+      "subtitle": "2. Layout and Positioning",
+      "description": "Learn the basics of CSS including selectors, properties and how to apply styles to HTML elements.By the end, you will be able to design complex page structures that adapt to different screen sizes.",
+      "category": "CSS Layout Techniques",
+      "instructor": "Ah Mei",
+      "rating": "4.8/5.0",
+      "creditHours": 4,
+      "logo": "https://img.icons8.com/?size=96&id=21278&format=png",
+      "modules": [
+        {
+          "title": "Module 1: Introduction to CSS Layout",
+          "description": "This module introduces the concept of layout in CSS. Learners will understand how web pages are structured and how CSS controls the positioning and arrangement of elements on a webpage.",
+          "previewUrl": "https://youtu.be/jx5jmI0UlXU?si=PVcUFBscmJKPXWAU"
+        },
+        {
+          "title": "Module 2: CSS Positioning",
+          "description": "This module focuses on CSS positioning methods such as static, relative, absolute, fixed, and sticky. Learners will understand how elements move and behave on a page using different position values.",
+          "previewUrl": "https://youtu.be/jx5jmI0UlXU?si=OtYtHGeJ2GzP7WlL"
+        },
+        {
+          "title": "Module 3: CSS Flexbox Layout",
+          "description": "This module introduces Flexbox, a one-dimensional layout system in CSS. Learners will learn how to align, space, and arrange elements efficiently in rows or columns.",
+          "previewUrl": "https://youtu.be/fYq5PXgSsbE?si=cK_YJCmkcMMeBkHt"
+        },
+        {
+          "title": "Module 4: CSS Grid Layout",
+          "description": "This module introduces CSS Grid, a two-dimensional layout system. Learners will learn how to create complex and responsive layouts using rows and columns.",
+          "previewUrl": "https://youtu.be/9zBsdzdE4sM?si=fcMZm42j_fbcIy-j"
+        }
+      ]
+    },
+    "java1": {
+      "title": "JavaScript For Beginners",
+      "subtitle": "1. JavaScript Basics",
+      "description": "Learn variables, functions and control structures in JavaScript.You will also learn how to write simple scripts to make web pages interactive..",
+      "category": "Fundamentals JavaScript",
+      "instructor": "Aisyah zila",
+      "rating": "4.9/5.0",
+      "creditHours": 4,
+      "logo": "https://img.icons8.com/?size=96&id=108784&format=png",
+      "modules": [
+        {
+          "title": "Module 1: Introduction to JavaScript",
+          "description": "This module introduces JavaScript, the programming language of the web. Learners will understand what JavaScript is how it works with HTML and CSS and how to include scripts in a web page to add interactivity.",
+          "previewUrl": "https://youtu.be/W6NZfCO5SIk?si=IzyAT9qB9dvd3w1q"
+        },
+        {
+          "title": "Module 2: Variables & Data Types",
+          "description": "Learners will explore variables in JavaScript, including var, let, and const. The module also covers basic data types such as strings, numbers, booleans, arrays and objects and how to store and manipulate data.",
+          "previewUrl": "https://youtu.be/Ukg_U3CnJWI?si=jl0XoRogLPihkU2-"
+        },
+        {
+          "title": "Module 3: Functions & Scope",
+          "description": "This module covers functions in JavaScript, including how to declare and call functions, pass arguments, return values and understand variable scope",
+          "previewUrl": "https://youtu.be/u_lLNH38n5E?si=OChv5wQXVbPTlrex"
+        },
+        {
+          "title": "Module 4: Control Structures",
+          "description": "Learners will understand control flow in JavaScript using conditional statements (if, else if, else), loops (for, while, for...of) and switch statements to execute code based on conditions or repeat tasks.",
+          "previewUrl": "https://youtu.be/wT-1T7Ws5qY?si=fyqMJuqDc836y4mr"
+        }
+      ]
+    },
+    "java2": {
+      "title": "JavaScript For Beginners",
+      "subtitle": "2. DOM Manipulation",
+      "description": "Learn how to manipulate the Document Object Model (DOM) using JavaScript. You will learn how to select elements, modify content, handle events, and create dynamic web pages.",
+      "category": "JavaScript DOM",
+      "instructor": "Aisyah zila",
+      "rating": "4.8/5.0",
+      "creditHours": 4,
+      "logo": "https://img.icons8.com/?size=96&id=108784&format=png",
+      "modules": [
+        {
+          "title": "Module 1: Introduction to DOM",
+          "description": "This module introduces the Document Object Model (DOM) and how JavaScript can interact with HTML elements.",
+          "previewUrl": "https://youtu.be/5fb2aPlgoys?si=example"
+        },
+        {
+          "title": "Module 2: Selecting Elements",
+          "description": "Learn different methods to select HTML elements using JavaScript.",
+          "previewUrl": "https://youtu.be/5fb2aPlgoys?si=example"
+        },
+        {
+          "title": "Module 3: Modifying Content",
+          "description": "Understand how to change text, attributes, and styles of DOM elements.",
+          "previewUrl": "https://youtu.be/5fb2aPlgoys?si=example"
+        },
+        {
+          "title": "Module 4: Event Handling",
+          "description": "Learn how to handle user interactions and events in JavaScript.",
+          "previewUrl": "https://youtu.be/5fb2aPlgoys?si=example"
+        }
+      ]
+    },
+    "php1": {
+      "title": "PHP For Beginners",
+      "subtitle": "1.PHP Fundamentals",
+      "description": "Learn syntax, variables and basic programming concepts in PHP.You will also learn how to write dynamic server side scripts to power web applications.",
+      "category": "Frameworks and Libraries",
+      "instructor": "Syahirah",
+      "rating": "4.8/5.0",
+      "creditHours": 4,
+      "logo": "https://img.icons8.com/?size=160&id=f0R4xVI4Sc8O&format=png",
+      "modules": [
+        {
+          "title": "Module 1: Introduction to PHP",
+          "description": "This module introduces PHP, a popular server-side scripting language used to create dynamic web pages. Learners will understand PHP syntax, how it integrates with HTML, and basic setup for running PHP scripts on a local server.",
+          "previewUrl": "https://youtu.be/m52ljs78S24?si=OPLANzU9L-EFVhbY"
+        },
+        {
+          "title": "Module 2: PHP Variables & Data Types",
+          "description": "Learn how to declare and use variables in PHP. This module covers data types such as strings, integers, floats, booleans, arrays, and how to store and manipulate information in PHP scripts.",
+          "previewUrl": "https://youtu.be/7TF00hJI78Y?si=LI7Hi0lOI45mtb09"
+        },
+        {
+          "title": "Module 3:PHP Functions & Operators",
+          "description": "This module teaches how to create and use functions in PHP, including passing arguments, returning values, and using built-in PHP functions. Learners will also understand common operators for arithmetic, comparison, and logical operations.",
+          "previewUrl": "https://youtu.be/SBFO5bIDYHQ?si=MTgevNv0S-7QFoAM"
+        },
+        {
+          "title": "Module 4: PHP Control Structures",
+          "description": "Learn how to use control structures in PHP, including conditional statements (if, else, switch) and loops (for, while, foreach). This module helps you write dynamic scripts that can make decisions and repeat actions based on conditions.",
+          "previewUrl": "https://youtu.be/WLkxfl6lC7c?si=4OOpy7Zoz5c1OlgL"
+        }
+      ]
+    },
+    "php2": {
+      "title": "PHP For Beginners",
+      "subtitle": "2. Working with Databases",
+      "description": "Learn how to connect PHP with databases, perform CRUD operations, and secure your database interactions.",
+      "category": "Database Integration",
+      "instructor": "Syahirah",
+      "rating": "4.7/5.0",
+      "creditHours": 4,
+      "logo": "https://img.icons8.com/?size=160&id=f0R4xVI4Sc8O&format=png",
+      "modules": [
+        {
+          "title": "Module 1: Introduction to Databases & MySQL",
+          "description": "This module introduces databases and MySQL, explaining how to set up and manage databases.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 2: Connecting PHP with MySQL",
+          "description": "Learn how to establish connections between PHP and MySQL databases.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 3: CRUD Operations",
+          "description": "Understand Create, Read, Update, and Delete operations in databases.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 4: Prepared Statements & Security",
+          "description": "Learn about prepared statements and how to secure database interactions.",
+          "previewUrl": "https://youtu.be/example"
+        }
+      ]
+    },
+    "html3": {
+      "title": "Hyper Text Markup Language For Beginners",
+      "subtitle": "3. HTML for Digital Marketing",
+      "description": "Learn how to use HTML to create landing pages, improve SEO and build structured content for digital marketing campaigns.",
+      "category": "Digital Marketing",
+      "instructor": "Azman Hisyam",
+      "rating": "4.6/5.0",
+      "creditHours": 4,
+      "logo": "https://img.icons8.com/?size=96&id=20909&format=png",
+      "modules": [
+        {
+          "title": "Module 1: HTML for Landing Pages",
+          "description": "Create effective landing pages using HTML.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 2: SEO with HTML",
+          "description": "Optimize HTML for search engines.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 3: Marketing Content Structure",
+          "description": "Structure content for marketing purposes.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 4: Conversion Optimization",
+          "description": "Use HTML to improve conversions.",
+          "previewUrl": "https://youtu.be/example"
+        }
+      ]
+    },
+    "html4": {
+      "title": "Hyper Text Markup Language For Beginners",
+      "subtitle": "4. HTML for Documentation & Technical Writing",
+      "description": "Master the use of HTML to create technical documentation, formatted articles, and structured digital reports.",
+      "category": "Technical Writing",
+      "instructor": "Azman Hisyam",
+      "rating": "4.5/5.0",
+      "creditHours": 4,
+      "logo": "https://img.icons8.com/?size=96&id=20909&format=png",
+      "modules": [
+        {
+          "title": "Module 1: Documentation Structure",
+          "description": "Structure technical documentation with HTML.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 2: Formatting Articles",
+          "description": "Format articles professionally.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 3: Digital Reports",
+          "description": "Create structured digital reports.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 4: Accessibility in Documentation",
+          "description": "Make documentation accessible.",
+          "previewUrl": "https://youtu.be/example"
+        }
+      ]
+    },
+    "css3": {
+      "title": "Cascading Style Sheets For Beginners",
+      "subtitle": "3. Dynamic Web Design with Advanced CSS",
+      "description": "Explore animations, transitions, and media queries for dynamic web design.",
+      "category": "Advanced CSS",
+      "instructor": "Ah Mei",
+      "rating": "4.9/5.0",
+      "creditHours": 4,
+      "logo": "https://img.icons8.com/?size=96&id=21278&format=png",
+      "modules": [
+        {
+          "title": "Module 1: CSS Animations",
+          "description": "Create animations with CSS.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 2: Transitions",
+          "description": "Add smooth transitions.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 3: Media Queries",
+          "description": "Make designs responsive.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 4: Advanced Techniques",
+          "description": "Advanced CSS techniques.",
+          "previewUrl": "https://youtu.be/example"
+        }
+      ]
+    },
+    "css4": {
+      "title": "Cascading Style Sheets For Beginners",
+      "subtitle": "4. CSS Frameworks",
+      "description": "Introduction to popular frameworks like Bootstrap and Tailwind CSS.",
+      "category": "CSS Frameworks",
+      "instructor": "Ah Mei",
+      "rating": "4.8/5.0",
+      "creditHours": 4,
+      "logo": "https://img.icons8.com/?size=96&id=21278&format=png",
+      "modules": [
+        {
+          "title": "Module 1: Introduction to Frameworks",
+          "description": "What are CSS frameworks?",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 2: Bootstrap",
+          "description": "Learn Bootstrap framework.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 3: Tailwind CSS",
+          "description": "Explore Tailwind CSS.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 4: Custom Frameworks",
+          "description": "Build your own framework.",
+          "previewUrl": "https://youtu.be/example"
+        }
+      ]
+    },
+    "java3": {
+      "title": "JavaScript For Beginners",
+      "subtitle": "3. Asynchronous JavaScript",
+      "description": "Understand promises, async/await and AJAX for dynamic content.",
+      "category": "Asynchronous Programming",
+      "instructor": "Aisyah zila",
+      "rating": "4.7/5.0",
+      "creditHours": 4,
+      "logo": "https://img.icons8.com/?size=96&id=108784&format=png",
+      "modules": [
+        {
+          "title": "Module 1: Callbacks",
+          "description": "Understanding callbacks in JS.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 2: Promises",
+          "description": "Working with promises.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 3: Async/Await",
+          "description": "Using async/await syntax.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 4: AJAX",
+          "description": "Fetching data with AJAX.",
+          "previewUrl": "https://youtu.be/example"
+        }
+      ]
+    },
+    "java4": {
+      "title": "JavaScript For Beginners",
+      "subtitle": "4. Frameworks and Libraries",
+      "description": "Introduction to React, Vue and other popular JS frameworks.",
+      "category": "JS Frameworks",
+      "instructor": "Aisyah zila",
+      "rating": "4.9/5.0",
+      "creditHours": 4,
+      "logo": "https://img.icons8.com/?size=96&id=108784&format=png",
+      "modules": [
+        {
+          "title": "Module 1: Introduction to Frameworks",
+          "description": "What are JS frameworks?",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 2: React",
+          "description": "Learn React framework.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 3: Vue.js",
+          "description": "Explore Vue.js.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 4: Other Libraries",
+          "description": "jQuery and other libraries.",
+          "previewUrl": "https://youtu.be/example"
+        }
+      ]
+    },
+    "php3": {
+      "title": "PHP For Beginners",
+      "subtitle": "3. Web Security",
+      "description": "Understand common vulnerabilities and how to secure PHP applications.",
+      "category": "Web Security",
+      "instructor": "Syahirah",
+      "rating": "4.6/5.0",
+      "creditHours": 4,
+      "logo": "https://img.icons8.com/?size=160&id=f0R4xVI4Sc8O&format=png",
+      "modules": [
+        {
+          "title": "Module 1: Introduction to Web Security",
+          "description": "Basics of web security.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 2: HTTPS, SSL/TLS",
+          "description": "Secure connections.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 3: Common Vulnerabilities",
+          "description": "SQL injection, XSS, etc.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 4: Secure Coding Practices",
+          "description": "Best practices for security.",
+          "previewUrl": "https://youtu.be/example"
+        }
+      ]
+    },
+    "php4": {
+      "title": "PHP For Beginners",
+      "subtitle": "4. Frameworks",
+      "description": "Introduction to Laravel and other PHP frameworks for rapid development.",
+      "category": "PHP Frameworks",
+      "instructor": "Syahirah",
+      "rating": "4.8/5.0",
+      "creditHours": 4,
+      "logo": "https://img.icons8.com/?size=160&id=f0R4xVI4Sc8O&format=png",
+      "modules": [
+        {
+          "title": "Module 1: Introduction to Frameworks",
+          "description": "What are PHP frameworks?",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 2: Laravel Basics",
+          "description": "Learn Laravel framework.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 3: Other Frameworks",
+          "description": "Symfony, CodeIgniter, etc.",
+          "previewUrl": "https://youtu.be/example"
+        },
+        {
+          "title": "Module 4: Building Applications",
+          "description": "Build apps with frameworks.",
+          "previewUrl": "https://youtu.be/example"
+        }
+      ]
+    }
+  }
+}

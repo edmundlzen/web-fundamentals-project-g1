@@ -33,7 +33,6 @@ body {
   background: #f4f4f4;
 }
 
-
 .topbar {
   height: 70px;
   background-color: #ffffff;
@@ -62,14 +61,12 @@ body {
   background-color: #d5d5d5;
 }
 
-
 .container {
   display: flex;
   gap: 24px;
   padding: 24px;
   align-items: flex-start;
 }
-
 
 .sidebar {
   width: 200px;
@@ -95,7 +92,6 @@ body {
   flex-direction: column;
   gap: 24px;
 }
-
 
 .banner {
   width: 100%;
@@ -126,8 +122,17 @@ body {
   color: white;
 }
 
+.banner-content button {
+  margin-top: auto;
+  scale: 1.1;
+}
+
 .logo {
   width: 70px;
+}
+
+.text {
+  margin-right: auto;
 }
 
 .text h1 {
