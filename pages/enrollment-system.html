@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Enrollment</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/detail-course.css" />
+    <link rel="stylesheet" href="../css/course-enrollment.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="topbar">
+      <a href="homepage.html" class="icon-button">
+        <img src="../images/icon.png" width="64" height="64" />
+      </a>
+      <a href="homepage.html" class="topbar-button">Home</a>
+      <a href="course-catalog.html" class="topbar-button">Course Catalog</a>
+      <a href="progress.html" class="topbar-button">Progress Tracker</a>
+      <a href="forum.html" class="topbar-button">Community</a>
+      <a href="dashboard.html" class="topbar-button">Dashboard</a>
+      <div class="nav-right">
+        <a href="login.html" class="btn-outline">Log in</a>
+        <a href="signup.html" class="btn-primary">Sign up</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="enrollment-layout">
+        <div class="enrollment-left">
+          <section class="course-card">
+            <img
+              src="https://img.icons8.com/?size=96&id=20909&format=png"
+              alt="HTML Logo"
+              class="course-logo"
+            />
+
+            <div class="course-content">
+              <h2>Hyper Text Markup Language For Beginners</h2>
+              <h3>2. HTML for UI Design</h3>
+
+              <p>
+                Understand how HTML forms the backbone of interface structure
+                and how it is used to organize visual elements in UI design.
+                This module focuses on how HTML is used to organize visual
+                elements such as sections, text, images, and components, helping
+                designers and developers create clean, consistent and
+                user-friendly interfaces.
+              </p>
+
+              <p>Category: UI Development</p>
+              <p>Instructor: Azman Hisyam</p>
+              <p>Rating: 4.7/5.0</p>
+              <p>Credit Hours: 4</p>
+            </div>
+          </section>
+        </div>
+
+        <div class="enrollment-right">
+          <div class="step active" id="personal-step">
+            <h1 class="title-lg">Personal Details</h1>
+            <div class="ssl-container">
+              <img
+                width="20"
+                height="20"
+                src="https://img.icons8.com/fluency-systems-filled/48/security-ssl.png"
+                alt="security-ssl"
+              />
+              <p class="ssl-text">Secure SSL encrypted payment</p>
+            </div>
+            <form id="personal-form">
+              <div class="personal-details-container">
+                <div class="personal-row-span-1">
+                  <label for="first-name" class="input-label">First Name</label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    class="input-field"
+                    placeholder="Enter your first name"
+                    required
+                  />
+                </div>
+                <div class="personal-row-span-1">
+                  <label for="last-name" class="input-label">Last Name</label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    class="input-field"
+                    placeholder="Enter your last name"
+                    required
+                  />
+                </div>
+                <div class="personal-row-span-1">
+                  <label for="email" class="input-label">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="input-field"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="personal-row-span-1">
+                  <label for="phone" class="input-label">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="input-field"
+                    placeholder="Enter your phone number"
+                    required
+                  />
+                </div>
+                <div class="personal-row-span-1">
+                  <label for="addr1" class="input-label">Address Line 1</label>
+                  <input
+                    type="text"
+                    id="addr1"
+                    class="input-field"
+                    placeholder="Enter address line 1"
+                    required
+                  />
+                </div>
+                <div class="personal-row-span-1">
+                  <label for="addr2" class="input-label">Address Line 2</label>
+                  <input
+                    type="text"
+                    id="addr2"
+                    class="input-field"
+                    placeholder="Enter address line 2"
+                  />
+                </div>
+                <div class="personal-row-span-1">
+                  <label for="state" class="input-label">State</label>
+                  <select id="state" class="input-field" required>
+                    <option value="">Select State</option>
+                  </select>
+                </div>
+                <div class="personal-row-span-1">
+                  <label for="city" class="input-label">City</label>
+                  <select id="city" class="input-field" required>
+                    <option value="">Select City</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+            <button class="btn-primary next-button">
+              <img
+                width="20"
+                height="20"
+                src="https://img.icons8.com/ios/50/right--v1.png"
+                alt="arrow"
+              />
+              Next step: Payment Details
+            </button>
+          </div>
+          <div class="step" id="payment-step">
+            <h1 class="title-lg">Complete payment</h1>
+            <form id="payment-form">
+              <div class="ssl-container">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://img.icons8.com/fluency-systems-filled/48/security-ssl.png"
+                  alt="security-ssl"
+                />
+                <p class="ssl-text">Secure SSL encrypted payment</p>
+              </div>
+              <h3 class="payment-details-text">Payment Details</h3>
+              <div class="payment-details-container">
+                <div class="payment-row-span-1">
+                  <label for="name-on-card" class="input-label"
+                    >Name on Card</label
+                  >
+                  <input
+                    type="text"
+                    id="name-on-card"
+                    class="input-field"
+                    placeholder="Enter name as on card"
+                  />
+                </div>
+                <div class="payment-row-span-1">
+                  <label for="card-number" class="input-label"
+                    >Card Number</label
+                  >
+                  <div class="input-with-icon">
+                    <img
+                      width="20"
+                      height="20"
+                      src="https://img.icons8.com/ios/50/bank-card-back-side--v1.png"
+                      alt="card icon"
+                      class="input-icon"
+                    />
+                    <input
+                      type="text"
+                      id="card-number"
+                      class="input-field"
+                      placeholder="1234 5678 9012 3456"
+                    />
+                  </div>
+                </div>
+                <div class="payment-row-span-2">
+                  <label for="billing-address" class="input-label"
+                    >Billing Address</label
+                  >
+                  <input
+                    type="text"
+                    id="billing-address"
+                    class="input-field"
+                    placeholder="Enter your billing address"
+                  />
+                </div>
+                <div class="payment-row-span-1">
+                  <label for="expiry-date" class="input-label"
+                    >Expiry Date</label
+                  >
+                  <input
+                    type="text"
+                    id="expiry-date"
+                    class="input-field"
+                    placeholder="MM/YY"
+                  />
+                </div>
+                <div class="payment-row-span-1">
+                  <label for="cvv" class="input-label">CVV</label>
+                  <input
+                    type="text"
+                    id="cvv"
+                    class="input-field"
+                    placeholder="123"
+                  />
+                </div>
+              </div>
+            </form>
+            <button class="btn-outline back-button">
+              <img
+                width="20"
+                height="20"
+                src="https://img.icons8.com/ios/50/left--v1.png"
+                alt="arrow"
+              />
+              Back to Personal Details
+            </button>
+            <button class="btn-primary complete-payment-button">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA1UlEQVR4nN3SMU4CQRiG4TWxoJRwADsPYDyEYKKn8QrGQ5CQmHAES4FISWdpudpARWMIifiYDWNsBHaYJaJvPf/3bLFZ9i9Cz7IFbnYBDH03Q6NypAj30utnq0KrAuBpHXCA50TgciUQkOuE8cHa8QDU8bbF+AfONgIB6WwB3JUaD8Bp5PgMx6WBgIwigNvY8QYmJb+8i1os0A4DD8WvG3VcYvwI75jjpNLxABxiKr5hDHKFcSTwmO1NuMArXtBMfffTYXHwVZ767leAZjjOcZ767m/3CUsLRmsxOLaHAAAAAElFTkSuQmCC"
+                alt="shopping-cart"
+                width="14"
+                height="14"
+              />
+              Checkout
+            </button>
+          </div>
+          <div class="step" id="success-step">
+            <div class="success-container">
+              <img
+                width="200"
+                height="200"
+                src="https://img.icons8.com/comic/200/checked.png"
+                alt="checked"
+              />
+              <h1 class="title-lg">Thank you</h1>
+              <p class="success-text">You have successfully checked out.</p>
+              <p class="success-text">
+                Please proceed to view the course in your course catalog
+              </p>
+              <button class="btn-primary">
+                <img
+                  width="24"
+                  height="24"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO3WMUpDQRiF0SEgBAtBTGGha7XLyiwsBJMmTVyD2MTKeNJM8RASXyXzwz0wzTDFd7tpLSIiIiIiRoIb3M44V21E2Jlnj0UbDV7wceZ84hs/fcR1qwKPeO/hx1IDfsVv8VVmAB4m8RuscCgxoMfvp/H9fvwB5+JLDHAhfvgB/ogfeoAZ8cMOMDO+v33GK5atWvxwcD/5/yT+X2Hd499w16rBAk8l4yMiIiIiolV2Aqg+w/sH75qVAAAAAElFTkSuQmCC"
+                  alt="external-arrow-up-right-arrows-thin-kawalan-studio"
+                />
+                View Course
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const nextButton = document.querySelector(".next-button");
+      const backButton = document.querySelector(".back-button");
+      const checkoutButton = document.querySelector(".complete-payment-button");
+      const personalStep = document.getElementById("personal-step");
+      const paymentStep = document.getElementById("payment-step");
+      const successStep = document.getElementById("success-step");
+
+      nextButton.addEventListener("click", () => {
+        personalStep.classList.add("fade-out");
+        setTimeout(() => {
+          personalStep.classList.remove("active", "fade-out");
+          paymentStep.classList.add("active");
+        }, 300);
+      });
+
+      backButton.addEventListener("click", () => {
+        paymentStep.classList.add("fade-out");
+        setTimeout(() => {
+          paymentStep.classList.remove("active", "fade-out");
+          personalStep.classList.add("active");
+        }, 300);
+      });
+
+      checkoutButton.addEventListener("click", () => {
+        paymentStep.classList.add("fade-out");
+        setTimeout(() => {
+          paymentStep.classList.remove("active", "fade-out");
+          successStep.classList.add("active");
+        }, 300);
+      });
+
+      const cardInput = document.getElementById("card-number");
+      cardInput.addEventListener("input", function (e) {
+        let value = e.target.value.replace(/\s/g, "").replace(/\D/g, "");
+        let formatted = value.match(/.{1,4}/g)?.join(" ") || "";
+        e.target.value = formatted.substring(0, 19);
+      });
+
+      const locationsData = {
+        states: [
+          {
+            name: "Johor",
+            cities: [
+              "Johor Bahru",
+              "Iskandar Puteri",
+              "Pasir Gudang",
+              "Muar",
+              "Batu Pahat",
+              "Kluang",
+              "Kulai",
+              "Segamat",
+              "Pontian",
+              "Kota Tinggi",
+            ],
+          },
+          {
+            name: "Kedah",
+            cities: [
+              "Alor Setar",
+              "Sungai Petani",
+              "Kulim",
+              "Langkawi",
+              "Kubang Pasu",
+              "Baling",
+              "Yan",
+              "Sik",
+            ],
+          },
+          {
+            name: "Kelantan",
+            cities: [
+              "Kota Bharu",
+              "Pasir Mas",
+              "Tumpat",
+              "Tanah Merah",
+              "Machang",
+              "Gua Musang",
+              "Kuala Krai",
+            ],
+          },
+          {
+            name: "Melaka",
+            cities: ["Melaka City", "Alor Gajah", "Jasin", "Ayer Keroh"],
+          },
+          {
+            name: "Negeri Sembilan",
+            cities: [
+              "Seremban",
+              "Port Dickson",
+              "Nilai",
+              "Jempol",
+              "Tampin",
+              "Kuala Pilah",
+            ],
+          },
+          {
+            name: "Pahang",
+            cities: [
+              "Kuantan",
+              "Temerloh",
+              "Bentong",
+              "Pekan",
+              "Raub",
+              "Jerantut",
+              "Cameron Highlands",
+            ],
+          },
+          {
+            name: "Perak",
+            cities: [
+              "Ipoh",
+              "Taiping",
+              "Teluk Intan",
+              "Manjung",
+              "Kuala Kangsar",
+              "Batu Gajah",
+              "Tanjung Malim",
+              "Tapah",
+            ],
+          },
+          {
+            name: "Perlis",
+            cities: ["Kangar", "Arau", "Kuala Perlis", "Padang Besar"],
+          },
+          {
+            name: "Pulau Pinang",
+            cities: [
+              "George Town",
+              "Seberang Perai",
+              "Butterworth",
+              "Bukit Mertajam",
+              "Bayan Lepas",
+              "Kepala Batas",
+            ],
+          },
+          {
+            name: "Sabah",
+            cities: [
+              "Kota Kinabalu",
+              "Sandakan",
+              "Tawau",
+              "Lahad Datu",
+              "Keningau",
+              "Penampang",
+              "Putatan",
+            ],
+          },
+          {
+            name: "Sarawak",
+            cities: [
+              "Kuching",
+              "Miri",
+              "Sibu",
+              "Bintulu",
+              "Kota Samarahan",
+              "Limbang",
+              "Sri Aman",
+              "Sarikei",
+            ],
+          },
+          {
+            name: "Selangor",
+            cities: [
+              "Shah Alam",
+              "Petaling Jaya",
+              "Subang Jaya",
+              "Klang",
+              "Kajang",
+              "Selayang",
+              "Ampang Jaya",
+              "Sepang",
+              "Cyberjaya",
+              "Rawang",
+            ],
+          },
+          {
+            name: "Terengganu",
+            cities: [
+              "Kuala Terengganu",
+              "Chukai",
+              "Dungun",
+              "Kuala Nerus",
+              "Marang",
+              "Besut",
+            ],
+          },
+          {
+            name: "Wilayah Persekutuan",
+            cities: ["Kuala Lumpur", "Putrajaya", "Labuan"],
+          },
+        ],
+      };
+
+      function populateStates() {
+        const stateSelect = document.getElementById("state");
+        locationsData.states.forEach((state) => {
+          const option = document.createElement("option");
+          option.value = state.name;
+          option.textContent = state.name;
+          stateSelect.appendChild(option);
+        });
+      }
+
+      populateStates();
+
+      document.getElementById("city").disabled = true;
+
+      document.getElementById("state").addEventListener("change", function () {
+        const selectedState = this.value;
+        const citySelect = document.getElementById("city");
+        citySelect.innerHTML = '<option value="">Select City</option>';
+        citySelect.disabled = !selectedState;
+        if (selectedState) {
+          const state = locationsData.states.find(
+            (s) => s.name === selectedState
+          );
+          if (state) {
+            state.cities.forEach((city) => {
+              const option = document.createElement("option");
+              option.value = city;
+              option.textContent = city;
+              citySelect.appendChild(option);
+            });
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,11 +1,13 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 .container {
   padding: 20px;
+  width: 100%;
+  height: auto;
 }
 
 .main-content {
@@ -29,111 +31,101 @@
   }
 }
 
-body {
-    background: #f5f5f5;
-}
-
-
 .navbar {
-    height: 60px;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    gap: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 60px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-logo {
-    width: 40px;
-    height: 40px;
-    background: #ddd;
-    border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: #ddd;
+  border-radius: 50%;
 }
 
 .nav-links {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 .nav-item {
-    width: 80px;
-    height: 20px;
-    background: #ddd;
-    border-radius: 5px;
+  width: 80px;
+  height: 20px;
+  background: #ddd;
+  border-radius: 5px;
 }
-
 
 .container {
-    display: flex;
-    padding: 20px;
-    gap: 20px;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
 }
 
-
 .sidebar {
-    width: 200px;
-    background: #ffffff;
-    padding: 15px;
-    border-radius: 10px;
+  width: 200px;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 .sidebar-item {
-    height: 35px;
-    background: #e0e0e0;
-    border-radius: 8px;
-    margin-bottom: 10px;
+  height: 35px;
+  background: #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
-
 
 .main-content {
-    flex: 1;
-    display: flex;
-    gap: 20px;
+  flex: 1;
+  display: flex;
+  gap: 20px;
 }
 
-
 .course-card {
-    width: 380px;
-    background: #ffffff;
-    border-radius: 15px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  width: 380px;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .card-header {
-    height: 180px;
-    background: #dcdcdc;
-    border-radius: 12px;
+  height: 180px;
+  background: #dcdcdc;
+  border-radius: 12px;
 }
 
 .card-body {
-    height: 120px;
-    background: #e5e5e5;
-    border-radius: 10px;
+  height: 120px;
+  background: #e5e5e5;
+  border-radius: 10px;
 }
 
 .card-footer {
-    height: 60px;
-    background: #ededed;
-    border-radius: 10px;
+  height: 60px;
+  background: #ededed;
+  border-radius: 10px;
 }
 
-
 .modules {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .module-card {
-    height: 100px;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 100px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .course-card {
@@ -144,13 +136,11 @@ body {
   position: relative;
   color: white;
 
-
   background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/797/938/large/typing-on-apple-keyboard-on-desk-side-perspective-shot-4k-free-video.jpg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
 }
-
 
 .course-card::before {
   content: "";
@@ -169,7 +159,6 @@ body {
   z-index: 1;
 }
 
-
 .course-content {
   position: relative;
   z-index: 1;
@@ -186,7 +175,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  width: 80px;      
+  width: 80px;
   height: 35px;
 
   background: #939393;

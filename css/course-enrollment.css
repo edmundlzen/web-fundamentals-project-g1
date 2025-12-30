@@ -1,0 +1,190 @@
+.enrollment-layout {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.enrollment-left {
+  flex-shrink: 0;
+}
+
+.enrollment-right {
+  flex: 1;
+  height: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.enrollment-right .title-lg {
+  font-weight: 600;
+}
+
+.step {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  flex: 1;
+  flex-direction: column;
+}
+
+.step.active {
+  display: flex;
+  opacity: 1;
+}
+
+.step.fade-out {
+  opacity: 0;
+}
+
+.ssl-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.ssl-text {
+  font-size: 12px;
+  color: #202020;
+}
+
+.payment-details-text {
+  font-size: 16px;
+  margin-top: 28px;
+}
+
+.payment-details-container {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 24px;
+}
+
+.personal-details-container {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 24px;
+}
+
+.payment-row-span-1 {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-row-span-2 {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-row-span-1 {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-row-span-2 {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-with-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-with-icon .input-icon {
+  position: absolute;
+  left: 12px;
+  opacity: 0.6;
+}
+
+.input-with-icon .input-field {
+  padding-left: 40px;
+}
+
+#card-number {
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.complete-payment-button {
+  width: 100%;
+  margin-top: 12px;
+  box-sizing: border-box;
+  padding: 10px 16px;
+  font-size: 14px;
+}
+
+.next-button {
+  width: 100%;
+  margin-top: auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.back-button {
+  width: 100%;
+  margin-top: auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 6px 16px;
+  font-size: 12px;
+}
+
+.success-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.success-text {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+.view-course-button {
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .enrollment-layout {
+    flex-direction: column;
+  }
+
+  .enrollment-left,
+  .enrollment-right {
+    max-width: 100%;
+  }
+
+  .payment-details-container {
+    grid-template-columns: 1fr;
+  }
+
+  .personal-details-container {
+    grid-template-columns: 1fr;
+  }
+}
