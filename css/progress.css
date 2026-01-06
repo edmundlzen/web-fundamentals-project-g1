@@ -252,6 +252,8 @@ body {
 
   .section-titlebar {
     flex-direction: column;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   .section-titlebar .title-lg {
@@ -260,6 +262,10 @@ body {
 
   .section-titlebar .btn-primary {
     width: 100%;
+    align-self: stretch;
+    margin-top: 8px;
+    padding: 10px 12px;
+    box-sizing: border-box;
   }
 
   .course-card {
