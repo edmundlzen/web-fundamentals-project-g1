@@ -48,7 +48,13 @@
           </div>
 
           <div class="auth-actions">
-            <button type="submit">Login</button>
+            <button
+              type="submit"
+              onclick="handleLogin(event)"
+              class="btn-primary"
+            >
+              Log In
+            </button>
           </div>
         </form>
 
@@ -112,4 +118,19 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    function handleLogin(event) {
+      event.preventDefault();
+
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      if (!email || !password) {
+        alert("Please enter both email and password.");
+        return;
+      }
+
+      window.location.href = "dashboard.html";
+    }
+  </script>
 </html>
