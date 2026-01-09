@@ -90,6 +90,46 @@
       const STORAGE_KEY_COMMENTS = "forumComments";
       const STORAGE_KEY_POSTS = "forumPosts";
 
+      // List of swear words to filter
+      const SWEAR_WORDS = [
+        "damn",
+        "hell",
+        "crap",
+        "shit",
+        "fuck",
+        "ass",
+        "bitch",
+        "bastard",
+        "piss",
+        "dick",
+        "cock",
+        "pussy",
+        "asshole",
+        "bullshit",
+        "motherfucker",
+        "fck",
+        "wtf",
+        "stfu",
+        "babi",
+        "pukimak",
+      ];
+
+      function containsSwearWords(text) {
+        const lowerText = text.toLowerCase();
+        return SWEAR_WORDS.some((word) => {
+          const regex = new RegExp(`\\b${word}\\b`, "i");
+          return regex.test(lowerText);
+        });
+      }
+
+      function getMatchedSwearWords(text) {
+        const lowerText = text.toLowerCase();
+        return SWEAR_WORDS.filter((word) => {
+          const regex = new RegExp(`\\b${word}\\b`, "i");
+          return regex.test(lowerText);
+        });
+      }
+
       function openPostModal() {
         document.getElementById("postModal").style.display = "block";
       }
@@ -299,6 +339,17 @@
             const commentText = input.value.trim();
 
             if (commentText) {
+              // Validate for swear words
+              if (containsSwearWords(commentText)) {
+                const matchedWords = getMatchedSwearWords(commentText);
+                alert(
+                  `Your comment contains inappropriate language: "${matchedWords.join(
+                    '", "'
+                  )}". Please keep the discussion respectful.`
+                );
+                return;
+              }
+
               const newComment = {
                 author: "You",
                 timeAgo: "just now",
@@ -351,6 +402,38 @@
           if (!title || !content) {
             // Simple validation
             alert("Please provide both a title and content for your post.");
+            return;
+          }
+
+          // Validate title for swear words
+          if (containsSwearWords(title)) {
+            const matchedWords = getMatchedSwearWords(title);
+            alert(
+              `Your post title contains inappropriate language: "${matchedWords.join(
+                '", "'
+              )}". Please use respectful language.`
+            );
+            return;
+          }
+
+          // Validate content for swear words
+          if (containsSwearWords(content)) {
+            const matchedWords = getMatchedSwearWords(content);
+            alert(
+              `Your post content contains inappropriate language: "${matchedWords.join(
+                '", "'
+              )}". Please use respectful language.`
+            );
+            return;
+          }
+
+          if (containsSwearWords(author)) {
+            const matchedWords = getMatchedSwearWords(author);
+            alert(
+              `Your author name contains inappropriate language: "${matchedWords.join(
+                '", "'
+              )}". Please use a respectful name.`
+            );
             return;
           }
 
